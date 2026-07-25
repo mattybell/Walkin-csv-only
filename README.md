@@ -39,14 +39,19 @@ The only lines changed from the original files:
 ## Usage in Google Colab
 
 Open `research_notebook.ipynb` directly from GitHub in Colab
-(`https://colab.research.google.com/github/mattybell/Walkin-csv-only/blob/main/research_notebook.ipynb`)
+(`https://colab.research.google.com/github/mattybell/Walkin-csv-only/blob/dev/research_notebook.ipynb`)
 and run the first code cell. Colab only loads the notebook file itself this way — its
-working directory starts empty — so that first cell clones
-[Walkin-csv-only](https://github.com/mattybell/Walkin-csv-only) and moves the cloned
-`data/`, `app/`, `build_local_db.py`, `train_redemption_classifier.py`, etc. up into the
-working directory, then installs dependencies and builds `walkin_research.db`
+working directory starts empty — so that first cell clones the `dev` branch of
+[Walkin-csv-only](https://github.com/mattybell/Walkin-csv-only/tree/dev) and moves the
+cloned `data/`, `app/`, `build_local_db.py`, `train_redemption_classifier.py`, etc. up into
+the working directory, then installs dependencies and builds `walkin_research.db`
 automatically. Every cell after that runs exactly like the original. The step is skipped
 automatically outside Colab or if those files are already present.
+
+**Note:** this package is pushed to the `dev` branch, not `main` (the repo's default
+branch) — always use `dev` in the Colab URL above. The notebook's clone cell is pinned to
+`dev` explicitly, so a plain link to `main` would only affect which copy of the notebook
+Colab displays, not which branch gets cloned.
 
 ## Usage locally
 
