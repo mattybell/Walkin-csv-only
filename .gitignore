@@ -2,5 +2,4 @@ walkin_research.db
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-/models/
 /reports/
